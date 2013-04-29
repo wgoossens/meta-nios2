@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# assume the jar is in the same dir as the shell script
+SOPC2DTS_DIRPATH=`which sopc2dts`
+
+# if not, assume we can find the path from $0
+if [ x${SOPC2DTS_DIRPATH}y = xy ]; then
+  SOPC2DTS_DIRPATH=$0
+fi
+
+SOPC2DTS_JARDIR=`dirname $SOPC2DTS_DIRPATH`
+
+# requires JRE 1.5
+java -jar $SOPC2DTS_JARDIR/sopc2dts.jar $@

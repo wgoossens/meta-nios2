@@ -1,0 +1,3 @@
+Design from http://www.alterawiki.com/wiki/Extrem_guide_to_kill_NEEK_with_u-boot
+
+To built this system set MACHINE="neek" in your local.conf.

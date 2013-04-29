@@ -1,0 +1,24 @@
+<BoardInfo pov="cpu">
+	<Memory>
+		<Node chip="ddr_sdram"/>
+	</Memory>
+	<Chosen>
+		<Bootargs val="console=ttyJ0 root=mtd:fs ip=dhcp rootfstype=jffs2"/>
+	</Chosen>
+	<FlashPartitions chip="ext_flash">
+		<Partition name="boot" address="0x0" size="0x20000">
+		</Partition>
+		<Partition name="fpga" address="0x20000" size="0xe0000">
+		</Partition>
+		<Partition name="fs" address="0x100000" size="0xc00000">
+		</Partition>
+		<Partition name="kernel" address="0xd00000" size="0x2a0000">
+		</Partition>
+		<Partition name="uboot" address="0xfa0000" size="0x60000">
+		</Partition>
+	</FlashPartitions>
+	<Ethernet name="igor_mac" mac="00:03:41:0f:02:01"></Ethernet>
+	<SpiMaster name="mmc_spi">
+		<SpiSlave reg="0" name="mmc-slot" class="sopc2dts.lib.boardinfo.SpiSlaveMMC" compatible="mmc-spi-slot" maxfreq="30000000" cpol="false" cpha="false" csHigh="false"></SpiSlave>
+	</SpiMaster>
+</BoardInfo>
