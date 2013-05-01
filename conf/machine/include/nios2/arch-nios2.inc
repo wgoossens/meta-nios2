@@ -25,3 +25,4 @@ PREFERRED_PROVIDER_virtual/kernel ?= "linux-nios2"
 # These values are board specific but they seem to be common to a large number
 # of boards so are reasonable defaults.
 USE_VT = "0"
+UBOOT_MACHINE ?= "nios2-custom"
