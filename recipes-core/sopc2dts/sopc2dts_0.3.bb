@@ -11,6 +11,8 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=0ab292053990244832d0799bd6d95975"
 
 S = "${WORKDIR}/git/sopc2dts"
 
+PARALLEL_MAKE=""
+
 do_compile() {
 	oe_runmake
 }
