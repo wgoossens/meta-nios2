@@ -1,0 +1,20 @@
+Yocto BSP layer for Altera's Nios2 softcore
+
+This layer provides support for Xilinx reconfigurables platforms
+for use with OpenEmbedded and/or Yocto.
+
+This layer depends on:
+
+URI: git://git.yoctoproject.org/poky.git
+branch: master
+revision: danny-8.0
+
+URI: git://github.com/MentorEmbedded/meta-sourcery.git
+branch: master
+revision: 5d423c45097faba7fa6ef2c22316aedf237add55 (HEAD as of this writing)
+
+
+This layer is maintained by:
+
+	Walter Goossens <waltergoossens@home.nl>
+
