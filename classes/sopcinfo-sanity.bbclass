@@ -91,9 +91,9 @@ def validateSopcinfo(bb,d):
         elif not 'fpu-custom' in features:
             bb.note("Custom instruction FPU found but not enabled in TUNE_FEATURES")
     elif fpuFound == '60-2':
-        if 'fpu-customdiv' in features:
+        if 'fpu-custom' in features:
             bb.note("Custom instruction FPU suports floating point division. Consider using 'fpu-customdiv' instead of 'fpu-custom' in TUNE_FEATURES")
-        elif not 'fpu-custom' in features:
+        elif not 'fpu-customdiv' in features:
             bb.note("Custom instruction FPU with floating point division found but not enabled in TUNE_FEATURES")
     if not messages == "":
         raise_sopcinfo_sanity_error(messages, d)
