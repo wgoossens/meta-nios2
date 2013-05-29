@@ -7,7 +7,7 @@ SRC_URI_nios2 = " git://sopc.et.ntust.edu.tw/git/linux-2.6.git;protocol=git;bran
 #SRC_URI_nios2 = " git://github.com/tklauser/linux-nios2.git;protocol=git;branch=nios2"
 SRC_URI_nios2 += "file://defconfig"
 
-COMPATIBLE_MACHINE = "(neek|nios2custom)"
+COMPATIBLE_MACHINE = "(neek|ghrd3c120|nios2custom)"
 
 LINUX_VERSION = "${PV}"
 
