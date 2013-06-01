@@ -19,3 +19,4 @@ PACKAGE_EXTRA_ARCHS_tune-nios2 = "${TUNE_PKGARCH}"
 
 INHERIT += "sopcinfo-sanity"
 
+INHIBIT_PACKAGE_DEBUG_SPLIT = "1"
