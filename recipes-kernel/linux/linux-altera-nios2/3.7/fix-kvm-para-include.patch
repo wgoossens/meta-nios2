@@ -1,6 +1,0 @@
-Index: git/arch/nios2/include/asm/kvm_para.h
-===================================================================
---- /dev/null
-+++ git/arch/nios2/include/asm/kvm_para.h
-@@ -0,0 +1 @@
-+#include <asm-generic/kvm_para.h>
