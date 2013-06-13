@@ -20,3 +20,5 @@ PACKAGE_EXTRA_ARCHS_tune-nios2 = "${TUNE_PKGARCH}"
 INHERIT += "sopcinfo-sanity"
 
 INHIBIT_PACKAGE_DEBUG_SPLIT = "1"
+CSL_TARGET_SYS_nios2 = "nios2-linux-gnu"
+
