@@ -1,8 +1,8 @@
 DESCRIPTION = "sopcinfo reader and info extractor"
 LICENSE = "LGPLv2"
-PR = "r1"
+PR = "r2"
 
-SRCREV="66cf603a13e68429ccfc4136860ef10042fa04f8"
+SRCREV="81883d4aa28d05d64bffcd4a86f945d4c2cd868a"
 SRC_URI = "git://sopc.et.ntust.edu.tw/git/tools.git"
 SRC_URI += "file://sopc2dts"
 
