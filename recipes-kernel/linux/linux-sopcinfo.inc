@@ -1,4 +1,6 @@
-DEPENDS += "sopc2dts-native"
+#DEPENDS += "sopc2dts-native"
+
+do_generate_devicetree[depends] += "sopc2dts-native:do_populate_sysroot"
 
 do_generate_devicetree() {
   sopc2dts -i ${SOPCINFO_FILE} -b ${BOARDINFO_FILE} -t dts -o nios2-custom.dts
