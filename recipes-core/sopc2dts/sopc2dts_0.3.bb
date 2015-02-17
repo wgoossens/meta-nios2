@@ -10,7 +10,7 @@ SRC_URI += "file://sopc2dts"
 BBCLASSEXTEND += " native "
 LIC_FILES_CHKSUM = "file://COPYING;md5=0ab292053990244832d0799bd6d95975"
 
-S = "${WORKDIR}/git/sopc2dts"
+S = "${WORKDIR}/git/"
 
 PARALLEL_MAKE=""
 
@@ -20,7 +20,7 @@ do_compile() {
 
 do_install() {
         install -d ${D}${bindir}
-        install -m 0755 ../../sopc2dts ${D}${bindir}
+        install -m 0755 ../sopc2dts ${D}${bindir}
         install -m 0755 sopc2dts.jar ${D}${bindir}
 }
 
